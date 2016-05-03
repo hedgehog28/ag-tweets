@@ -20,7 +20,7 @@ While I could have written a single method to fulfill the requirement of this te
  
 # Install instructions
 My development environment was the following:
- - Visual Studio 2012
+ - Visual Studio 2012 (Fully compatible and tested under Ubuntu 15.10 with Monodevelop / post-build event doesn't work - just copy the components into bin of TwitterTest application)
  - At least C# 3.5 (uses Linq ,Generic Collections, HashSet)
  - Nuget (to load log4net and Autofac and nunit)
  - In `.gitignore` file some standard ignores are present. So don't expect to find the executables on gitgub.

@@ -22,14 +22,16 @@ namespace AllanGray.Logic.Models
 			get;
 			set;
 		}
+
 		public string Text {
 			get;
 			set;
 		}
-        public string ToString()
-        {
-            return string.Format("@{0}> {1}", User, Text);
-        }
+
+		public new string ToString ()
+		{
+			return string.Format ("@{0}> {1}", User, Text);
+		}
 	}
 }
 

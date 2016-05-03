@@ -31,15 +31,13 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -52,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="log4net.config" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="tweet.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -63,11 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllanGray.Logic\AllanGray.Logic.csproj">
-      <Project>{3328c171-e5a8-48e1-aa10-65e57804b619}</Project>
+      <Project>{3328C171-E5A8-48E1-AA10-65E57804B619}</Project>
       <Name>AllanGray.Logic</Name>
     </ProjectReference>
     <ProjectReference Include="..\AllanGray.Technology\AllanGray.Technology.csproj">
-      <Project>{7c8ef312-dc89-4606-88a6-15dc25cc0da2}</Project>
+      <Project>{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}</Project>
       <Name>AllanGray.Technology</Name>
     </ProjectReference>
   </ItemGroup>

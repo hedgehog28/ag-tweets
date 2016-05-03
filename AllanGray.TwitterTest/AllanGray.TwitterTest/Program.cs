@@ -30,10 +30,11 @@ namespace AllanGray.TwitterTest
 
 	class MainClass
 	{
-        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType); 
+		private static readonly ILog log = LogManager.GetLogger (System.Reflection.MethodBase.GetCurrentMethod ().DeclaringType);
+
 		public static void Main (string[] args)
 		{			         
-            /*
+			/*
              *   Here I show several technologies in action namely Depedency Injection, in a broader sense Inversion of Control, 
              *  SOLID principles, and Domain Driven Design.
              * 
@@ -54,21 +55,19 @@ namespace AllanGray.TwitterTest
              * 
             */
             
-            try
-            {
-                RuntimeContext.Configure("infrastructure_assemblies"); //start of the service locator pattern                                    
-                var displayProvider = RuntimeContext.Resolve<ITwitterDisplayProvider>(); //just a console output implementation
-                var tweetStreamProvider = RuntimeContext.Resolve<ITwitterStreamProvider>(); //source the input tweets from a file
-                var subscriberManager = RuntimeContext.Resolve<ITwitterSubscriberManager>(); //source the follower/follows graph from a file
-                AllanGrayRunner run = new AllanGrayRunner(subscriberManager, tweetStreamProvider, displayProvider);
-                run.Run();
-            }
-            catch (Exception ex)
-            {
-                log.Error(ex);
-                throw;
-            }
-            Console.ReadKey();
+			try {
+				RuntimeContext.Configure ("infrastructure_assemblies"); //start of the service locator pattern                                    
+				var displayProvider = RuntimeContext.Resolve<ITwitterDisplayProvider> (); //just a console output implementation
+				var tweetStreamProvider = RuntimeContext.Resolve<ITwitterStreamProvider> (); //source the input tweets from a file
+				var subscriberManager = RuntimeContext.Resolve<ITwitterSubscriberManager> (); //source the follower/follows graph from a file
+				AllanGrayRunner run = new AllanGrayRunner (subscriberManager, tweetStreamProvider, displayProvider);
+				run.Run ();
+			} catch (Exception ex) {
+				log.Error (ex);
+				throw;
+			}
+			Console.ReadKey ();
 		}
 	}
 }
+
