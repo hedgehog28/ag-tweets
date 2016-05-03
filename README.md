@@ -23,12 +23,15 @@ My development environment was the following:
  - Visual Studio 2012
  - At least C# 3.5 (uses Linq ,Generic Collections, HashSet)
  - Nuget (to load log4net and Autofac and nunit)
-In `.gitignore` file some standard ignores are present.
- - Contents of the \packages folder, so when the solutions loads for the first time be sure to allow nuget to download depedencies.
+ - In `.gitignore` file some standard ignores are present. So don't expect to find the executables on gitgub.
+ - What's excluded is the contents of the `\packages` folder, so when the solutions loads for the first time be sure to allow nuget to download depedencies.
+ 
 # Compilation instructions
  - Allow nuget to download the package dependencies.
  - Get the solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
+ 
 # Running instructions
  - Compilation will trigger copy of the user.txt and tweet.txt files to the console application.
  - There is a command line configuration set in the IDE so that when you simply run the console application the input filenames will be read from command line.
  - Off the console application a `\log` file folder will be written. The default log-level is INFO. If you change it to DEBUG you will very verbose information which will be helpful in production fault-finding.  
+ - To save some space I put the unit tests in the console application.
