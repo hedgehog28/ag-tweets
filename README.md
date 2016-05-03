@@ -31,6 +31,7 @@ My development environment was the following:
  - Get the solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
  
 # Running instructions
+ - The entry point is the project AllanGray.TwitterTestConsole
  - Compilation will trigger copy of the user.txt and tweet.txt files to the console application.
  - There is a command line configuration set in the IDE so that when you simply run the console application the input filenames will be read from command line.
  - Off the console application a `\log` file folder will be written. The default log-level is INFO. If you change it to DEBUG you will very verbose information which will be helpful in production fault-finding.  

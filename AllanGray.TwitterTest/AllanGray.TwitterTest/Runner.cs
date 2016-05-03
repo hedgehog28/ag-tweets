@@ -8,7 +8,7 @@ using AllanGray.Logic.Interfaces;
 using AllanGray.Logic.Models;
 using log4net;
 
-namespace AllanGray.TwitterTest
+namespace AllanGray.TwitterTestConsole
 {
 	public class AllanGrayRunner
 	{

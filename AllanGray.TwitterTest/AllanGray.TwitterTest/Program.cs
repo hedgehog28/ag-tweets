@@ -25,7 +25,7 @@ using Autofac;
 using Autofac.Core;
 using log4net;
 
-namespace AllanGray.TwitterTest
+namespace AllanGray.TwitterTestConsole
 {
 	class MainClass
 	{
