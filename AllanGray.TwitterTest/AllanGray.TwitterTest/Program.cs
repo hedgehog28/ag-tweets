@@ -27,7 +27,6 @@ using log4net;
 
 namespace AllanGray.TwitterTest
 {
-
 	class MainClass
 	{
 		private static readonly ILog log = LogManager.GetLogger (System.Reflection.MethodBase.GetCurrentMethod ().DeclaringType);
