@@ -49,7 +49,7 @@ namespace AllanGray.UnitTests
 			var subscriberManager = RuntimeContext.Resolve<ITwitterSubscriberManager>();
 			var tweetProvider = RuntimeContext.Resolve<ITwitterStreamProvider>();
 
-			Assert.IsTrue(subscriberManager.GetUsers().Contains("Ward"
+			Assert.IsTrue(subscriberManager.GetUsers().Contains("Ward"));
 			Assert.IsFalse(subscriberManager.GetUsers().Contains("Ryker"));
 			Assert.IsTrue(subscriberManager.GetListOfFollowsByUser("Ward").Contains("Alan"));
 			var allanTweets = tweetProvider.GetTweets("Alan");			
