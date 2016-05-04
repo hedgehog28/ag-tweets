@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Autofac;
-using Autofac.Core;
-using System.Reflection;
-using System.Diagnostics.Contracts;
-
-
+﻿
 namespace AllanGray.Technology
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using Autofac;
+	using Autofac.Core;
+	using System.Reflection;
+	using System.Diagnostics.Contracts;
 	public sealed class RuntimeContext : IDisposable
 	{
 		//this must be a singleton

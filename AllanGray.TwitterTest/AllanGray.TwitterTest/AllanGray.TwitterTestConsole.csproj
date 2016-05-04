@@ -74,7 +74,4 @@
       <Name>AllanGray.Technology</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="lotsatweets.txt" />
-  </ItemGroup>
 </Project>

@@ -55,11 +55,23 @@ namespace AllanGray.TwitterTweetProvider
 				string line = sr.ReadLine ();                
 				while (!string.IsNullOrEmpty (line)) {
 					log.DebugFormat ("Read input line: {0}", line); //maybe you want to see on which line it fails, can always tone down/up the verbosity in config.
-					user = line.Split ('>') [0];
-					text = line.Split ('>') [1];
+					if (!line.Contains('>'))
+						log.Error("No delimiter found, continuing with next line.");
+					user = line.Split ('>') [0].Trim();
+					text = line.Split ('>') [1].Trim();
+					if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(user))
+					{
+						log.Error("That last line was unusable, continuing anyway.");
+						continue;
+					}
+					if (text.Length > 140)
+					{					
+						log.Error("Tweet text longer than 140 characters. Trimming instead.");
+						text = text.Substring(0,140);
+					}
 					//var intersect = text.Split ().Intersect (users.Select (x => "@" + x)); //in case someone sends you a tweet
 					if (users.Contains (user))
-						yield return new Tweet () { Text = text.Trim (), User = user.Trim () };
+						yield return new Tweet () { Text = text, User = user };
 					line = sr.ReadLine ();					                                
 				}                                
 			}

@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AllanGray.Logic.Interfaces;
-using System.IO;
-using log4net;
+﻿
 namespace AllanGray.TwitterSubscriberManager
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	using System.Threading.Tasks;
+	using AllanGray.Logic.Interfaces;
+	using System.IO;
+	using log4net;
 	public class TwitterSubscriberManager : ITwitterSubscriberManager
 	{
 		private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType); 
@@ -15,8 +16,8 @@ namespace AllanGray.TwitterSubscriberManager
 		//i didn't want to use a specialist graph structure for this so i just implemented an adjacency matrix using a dictionary of a list.
 		Dictionary<string, HashSet<string>> _followsGraph = new Dictionary<string, HashSet<string>>(); 
 		Dictionary<string, HashSet<string>> _followedByGraph = new Dictionary<string, HashSet<string>>();
-		//I use a hashset for superfast lookups because I'm assuming a potential scaling problem
-		//also i assume that at a minimum the userlist can fit into available memory.
+		
+		//i assume that at a minimum the userlist can fit into available memory.
 
 		//just for internal use
 		HashSet<string> _userList = new HashSet<string>();
