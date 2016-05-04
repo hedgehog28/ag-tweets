@@ -34,5 +34,6 @@ My development environment was the following:
  - The entry point is the project AllanGray.TwitterTestConsole
  - Compilation will trigger copy of the user.txt and tweet.txt files to the console application.
  - There is a command line configuration set in the IDE so that when you simply run the console application the input filenames will be read from command line.
- - Off the console application a `\log` file folder will be written. The default log-level is INFO. If you change it to DEBUG you will very verbose information which will be helpful in production fault-finding.  
- - To save some space I put the unit tests in the console application.
+ - Off the console application a `\log` file folder will be written. The default log-level is INFO. If you change it to DEBUG you will generate extremely verbose information which will be helpful in production fault-finding.  
+ - In the `app.config` file of the TwitterTestConsole project there is a key called `infrastructure_assemblies`. In a Continuos Build + Integration environment the contents of this key would typically point to `Mock` versions of the components/services. I left the DummyTweetProvider project as an example. This component is capable of generating a huge number of tweets.
+ - In keeping with the aim of planning for scale there is a python script added to let you generate a pretty big tweet file. In dev testing I generated a 300MB tweet file.
