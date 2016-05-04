@@ -13,7 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.TwitterSubscriber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.Logic", "AllanGray.Logic\AllanGray.Logic.csproj", "{3328C171-E5A8-48E1-AA10-65E57804B619}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.UnitTests", "AllanGray.UnitTests\AllanGray.UnitTests.csproj", "{39F09FDA-0014-42F1-AF48-1518EF94ABE7}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.DummyTweetProvider", "AllanGray.DummyTweetProvider\AllanGray.DummyTweetProvider.csproj", "{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}"
+>>>>>>> bb299e0d3aeb79f836622009adfddb1b844eb233
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,41 @@ Global
 		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Release|x86.ActiveCfg = Release|x86
 		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Release|x86.Build.0 = Release|x86
+<<<<<<< HEAD
+=======
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|x86.ActiveCfg = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|x86.Build.0 = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|x86.ActiveCfg = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|x86.Build.0 = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|x86.ActiveCfg = Release|Any CPU
+>>>>>>> bb299e0d3aeb79f836622009adfddb1b844eb233
 		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
