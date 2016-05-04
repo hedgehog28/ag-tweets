@@ -24,7 +24,7 @@ namespace AllanGray.TwitterTweetProvider
 		string _fileName;
 
 		public TwitterStreamProvider ()
-		{
+		{			
 			Initialize ();
 		}
 
@@ -37,6 +37,12 @@ namespace AllanGray.TwitterTweetProvider
 				_fileName = args [2];
 				//there are some race conditions that might arise if you check for file existance, READ privilege etc. just throw the exception and get over it.                
 			} else {
+				var tweetFile = Environment.GetEnvironmentVariable("tweetfile");
+				if (!string.IsNullOrEmpty(tweetFile)) //just so that the unit tests will work
+				{
+					_fileName = tweetFile;
+					return;
+				}
 				throw new ArgumentException ("This component requires that you pass 2 parameters to the command line. Eg [program name] <user.txt file> <tweets.txt file>");
 			}            
 		}

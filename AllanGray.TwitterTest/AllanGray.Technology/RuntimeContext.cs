@@ -46,7 +46,12 @@ namespace AllanGray.Technology
 			}
 			_container = _builder.Build ();
 		}
-
+		public static void Configure(params Assembly[] assemblies)
+		{
+			ContainerBuilder _builder = new ContainerBuilder();
+			_builder.RegisterAssemblyTypes(assemblies).AsImplementedInterfaces();
+			_container = _builder.Build();
+	}
 		public static T Resolve<T> ()
 		{
 			Contract.Requires ((_container as IContainer).IsRegistered<T> (), "Type not found in Resolver");
