@@ -12,28 +12,36 @@ Since the screening interview had a lot of questions about the latter concepts I
 
 # Key assumptions and design considerations
 While I could have written a single method to fulfill the requirement of this test, I felt I had to marry this up with what the filter-interview probed me about. Therefore I felt some feature targets needed to be developed.
- - The main thing is to recognise that the domain of problem is spread across three distinct areas, namely providing a list of tweets, providing a graph of users/followers and displaying in both the proper sequence and filter that list of tweets. (Here I demonstrate segregating the domain into distinct areas of concern where each class imeplementing some interface is singularly responsible for that domain - the `S` in `SOLID` - single responsibility).
+ - The main thing is to recognise that the domain of the problem is spread across three distinct areas, namely providing a list of tweets, providing a graph of users/followers and displaying in both the proper sequence and filter that list of tweets. (Here I demonstrate segregating the domain into distinct areas of concern where each class imeplementing some interface is singularly responsible for that domain - the `S` in `SOLID` - single responsibility).
  - I defined three interfaces for these seperate components with the intention that all three classes should be able to communicate with each other only through the defined interfaces. (Here I demonstrate the `L.I.D` in `SOLID` - Liskov substition, Interface Segregation and Dependency inversion).
  - Typically when I see a requirement to read a list from a file I expect said file size to exceed the amount of available memory and therefore opted to read the file line by line. Therefore I designed the application to be able to work for a __20Gb__ source text file just as good as a __20kb__ file. (For this component at least).
  - At the same time the overall architecture of the application is written in such a way that component which provides the list of tweets which need to be displayed doesn't need to know where the tweets come from, and therefore the former component may just as well be written to source the tweets from a database or online.
  - I did this for all of the components. The modular design totally leaves open the possibility that the tweet renderer can output its source feed to an html formatted file as to an ansi-enabled screen without changing any other component. The component providing the social graph of followers/users may be sourced from the actual twitter API without regard to how the tweets are displayed nor sourced.
- 
+ - I assumed that the input files will be accesible and that read privileges will be available.
+ - I assumed that the format of the files will be workable (ie you say it's a text file, I believe it's a text file all the way through).
+ - As far as exception handling is concerned I log what's recoverable, but I let irrecoverable and unexpected errors bubble up just before throwing them while preserving the stack. 
+   
+
 # Install instructions
 My development environment was the following:
- - Visual Studio 2012 (Fully compatible and tested under Ubuntu 15.10 with Monodevelop / post-build event doesn't work - just copy the components into bin of TwitterTest application)
+ - Visual Studio 2012 (I actually did most of the work in Ubuntu 15.10 with Monodevelop because I don't really use Windows much aside from at work so it's a plus that the application is cross-platform).
  - At least C# 3.5 (uses Linq ,Generic Collections, HashSet)
- - Nuget (to load log4net and Autofac and nunit)
- - In `.gitignore` file some standard ignores are present. So don't expect to find the executables on gitgub.
+ - Nuget (to load log4net and Autofac and Nunit)
+ - In `.gitignore` file some standard ignores are present. 
  - What's excluded is the contents of the `\packages` folder, so when the solutions loads for the first time be sure to allow nuget to download depedencies.
  
 # Compilation instructions
  - Allow nuget to download the package dependencies.
- - Get the solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
+ - Get the whole solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
  
 # Running instructions
  - The entry point is the project AllanGray.TwitterTestConsole
  - Compilation will trigger copy of the user.txt and tweet.txt files to the console application.
- - There is a command line configuration set in the IDE so that when you simply run the console application the input filenames will be read from command line.
+ - There is a command line configuration set in the IDE so that when you simply run the console application the input filenames will be read from command line. They can also be set as environment variables `tweetfile` and `userfile` respectively. (I could not pass command line parameters to the unit test environment so built that in).
  - Off the console application a `\log` file folder will be written. The default log-level is INFO. If you change it to DEBUG you will generate extremely verbose information which will be helpful in production fault-finding.  
  - In the `app.config` file of the TwitterTestConsole project there is a key called `infrastructure_assemblies`. In a Continuos Build + Integration environment the contents of this key would typically point to `Mock` versions of the components/services. I left the DummyTweetProvider project as an example. This component is capable of generating a huge number of tweets.
  - In keeping with the aim of planning for scale there is a python script added to let you generate a pretty big tweet file. In dev testing I generated a 300MB tweet file.
+
+# Meta-notes
+ - In DDD lingo I prefer to use the word component when referring to what's commonly called a service. I also use the term X-provider since it helps me conceptualise the solution approach better.
+ -  
