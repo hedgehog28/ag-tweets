@@ -43,5 +43,4 @@ My development environment was the following:
  - In keeping with the aim of planning for scale there is a python script added to let you generate a pretty big tweet file. In dev testing I generated a 300MB tweet file.
 
 # Meta-notes
- - In DDD lingo I prefer to use the word component when referring to what's commonly called a service. I also use the term X-provider since it helps me conceptualise the solution approach better.
- -  
+ - In DDD lingo I prefer to use the word component when referring to what's commonly called a service. I also use the term *-provider since it helps me conceptualise the solution approach better.
