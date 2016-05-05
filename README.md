@@ -19,6 +19,8 @@ While I could have written a single method to fulfill the requirement of this te
  - I did this for all of the components. The modular design totally leaves open the possibility that the tweet renderer can output its source feed to an html formatted file as to an ansi-enabled screen without changing any other component. The component providing the social graph of followers/users may be sourced from the actual twitter API without regard to how the tweets are displayed nor sourced.
  - I assumed that the input files will be accesible and that read privileges will be available.
  - I assumed that the format of the files will be workable (ie you say it's a text file, I believe it's a text file all the way through).
+ - I assume that usernames are case-sensitive, the `>` character serves as a delimiter (and is therefore not present in a tweet's text).
+ - I use `<space>follows<space>` to delimit the users in the `user.txt` file.
  - As far as exception handling is concerned I log what's recoverable, but I let irrecoverable and unexpected errors bubble up just before throwing them while preserving the stack. 
    
 
