@@ -21,7 +21,7 @@ While I could have written a single method to fulfill the requirement of this te
  - I assumed that the format of the files will be workable (ie you say it's a text file, I believe it's a text file all the way through).
  - I assume that usernames are case-sensitive, the `>` character serves as a delimiter (and is therefore not present in a tweet's text).
  - I use `<space>follows<space>` to delimit the users in the `user.txt` file.
- - As far as exception handling is concerned I log what's recoverable, but I let irrecoverable and unexpected errors bubble up just before throwing them while preserving the stack. 
+ - As far as exception handling is concerned I log what can be recovered from and continue, but I log irrecoverable and unexpected exceptions and let them bubble up and throw them while preserving the callstack. 
    
 
 # Install instructions
