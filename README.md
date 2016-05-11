@@ -36,6 +36,7 @@ My development environment was the following:
  
 # Compilation instructions
  - Added travis-ci build file so a push-hook will trigger a build on the open-source servers for travis-ci.org
+ - Having some trouble disabling the postbuild event due to OS differences.
  - Allow nuget to download the package dependencies.
  - Get the whole solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
  
