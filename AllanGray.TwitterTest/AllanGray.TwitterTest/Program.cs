@@ -65,7 +65,7 @@ namespace AllanGray.TwitterTestConsole
 				log.Error (ex);
 				throw;
 			}
-			Console.WriteLine("Press the <any> key to continue.");
+			Console.WriteLine ("Press the <any> key to continue.");
 			Console.ReadKey ();
 		}
 	}
