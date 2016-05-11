@@ -1,0 +1,6 @@
+language: csharp
+solution: AllanGray.TwitterTest/AllanGray.sln
+install:
+  - nuget # lets get version number
+  - nuget restore AllanGray.TwitterTest/AllanGray.sln -Verbosity detailed
+  - nuget update AllanGray.TwitterTest/AllanGray.sln -Verbosity detailed
