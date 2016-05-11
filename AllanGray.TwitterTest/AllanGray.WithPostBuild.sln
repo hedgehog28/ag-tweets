@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.TwitterTestConsole", "AllanGray.TwitterTest\AllanGray.TwitterTestConsole.csproj", "{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.Technology", "AllanGray.Technology\AllanGray.Technology.csproj", "{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.TwitterDisplayProvider", "AllanGray.TwitterDisplayProvider\AllanGray.TwitterDisplayProvider.csproj", "{6603698C-45F1-4BCA-B82E-C299CD522F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.TwitterTweetProvider", "AllanGray.TwitterTweetProvider\AllanGray.TwitterTweetProvider.csproj", "{A1D70B59-EDBF-446C-96A6-0B88C565FFA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.TwitterSubscriberManager", "AllanGray.TwitterSubscriberManager\AllanGray.TwitterSubscriberManager.csproj", "{93FB21F2-6492-4167-9993-7DF33DC70DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.Logic", "AllanGray.Logic\AllanGray.Logic.csproj", "{3328C171-E5A8-48E1-AA10-65E57804B619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.UnitTests", "AllanGray.UnitTests\AllanGray.UnitTests.csproj", "{39F09FDA-0014-42F1-AF48-1518EF94ABE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllanGray.DummyTweetProvider", "AllanGray.DummyTweetProvider\AllanGray.DummyTweetProvider.csproj", "{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C18F6E-1DC1-4ED0-A370-364E36F13E2A}.Release|Any CPU.ActiveCfg = Release|x86
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3328C171-E5A8-48E1-AA10-65E57804B619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E8BB54-187A-479F-B2B8-8A5FE8A8D9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F09FDA-0014-42F1-AF48-1518EF94ABE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F09FDA-0014-42F1-AF48-1518EF94ABE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F09FDA-0014-42F1-AF48-1518EF94ABE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F09FDA-0014-42F1-AF48-1518EF94ABE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6603698C-45F1-4BCA-B82E-C299CD522F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8EF312-DC89-4606-88A6-15DC25CC0DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FB21F2-6492-4167-9993-7DF33DC70DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FB21F2-6492-4167-9993-7DF33DC70DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FB21F2-6492-4167-9993-7DF33DC70DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FB21F2-6492-4167-9993-7DF33DC70DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D70B59-EDBF-446C-96A6-0B88C565FFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D70B59-EDBF-446C-96A6-0B88C565FFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D70B59-EDBF-446C-96A6-0B88C565FFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D70B59-EDBF-446C-96A6-0B88C565FFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AllanGray.TwitterTest\AllanGray.TwitterTestConsole.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

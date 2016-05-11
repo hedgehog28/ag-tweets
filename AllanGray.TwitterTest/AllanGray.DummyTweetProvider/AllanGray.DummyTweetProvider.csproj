@@ -36,7 +36,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y $(TargetDir)*.*  $(SolutionDir)AllanGray.TwitterTest\bin\$(ConfigurationName)\</PostBuildEvent>
+    <PostBuildEvent Condition="'$(OS)' == 'Windows'">xcopy /Y $(TargetDir)*.*  $(SolutionDir)AllanGray.TwitterTest\bin\$(ConfigurationName)\</PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllanGray.Logic\AllanGray.Logic.csproj">
