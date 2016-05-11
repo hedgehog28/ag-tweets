@@ -12,7 +12,7 @@ namespace AllanGray.TwitterTestConsole
 {
 	public class AllanGrayRunner
 	{
-		private static readonly ILog log = LogManager.GetLogger (System.Reflection.MethodBase.GetCurrentMethod ().DeclaringType);
+		//private static readonly ILog log = LogManager.GetLogger (System.Reflection.MethodBase.GetCurrentMethod ().DeclaringType);
 		public readonly ITwitterDisplayProvider Renderer;
 		public readonly ITwitterStreamProvider TweetProvider;
 		public readonly ITwitterSubscriberManager SubscriberManager;
