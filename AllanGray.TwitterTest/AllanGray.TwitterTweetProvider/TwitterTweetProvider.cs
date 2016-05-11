@@ -56,7 +56,10 @@ namespace AllanGray.TwitterTweetProvider
 				while (!string.IsNullOrEmpty (line)) {
 					log.DebugFormat ("Read input line: {0}", line); //maybe you want to see on which line it fails, can always tone down/up the verbosity in config.
 					if (!line.Contains('>'))
+					{
 						log.Error("No delimiter found, continuing with next line.");
+						continue;
+					}
 					user = line.Split ('>') [0].Trim();
 					text = line.Split ('>') [1].Trim();
 					if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(user))
