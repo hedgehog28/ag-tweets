@@ -1,3 +1,5 @@
+![build-status](https://travis-ci.org/skrillex581/ag-tweets.svg?branch=master)
+
 tldr; Find install instructions at the end of this file.
 # Purpose of this project
 This application is a coding test. It has the simple objective to display a list of tweets per user sourced from a text file. It has to be __production quality__.
