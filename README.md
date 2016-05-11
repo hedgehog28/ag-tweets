@@ -35,6 +35,7 @@ My development environment was the following:
  - What's excluded is the contents of the `\packages` folder, so when the solutions loads for the first time be sure to allow nuget to download depedencies.
  
 # Compilation instructions
+ - Added travis-ci build file so a push-hook will trigger a build on the open-source servers for travis-ci.org
  - Allow nuget to download the package dependencies.
  - Get the whole solution to compile first. There are a few post-build events which will trigger and copy the components to the application which serves as the solution entry point.
  
