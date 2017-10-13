@@ -2,7 +2,7 @@
 
 Solution will continue to fail on travis until I work out the build configuration issues for that build platform
 
-tldr; Find install instructions at the end of this file.
+tldr; Find install instructions at the end of this file. Trust me, this is one of the projects you want to be looking at. Allan Gray.
 # Purpose of this project
 This application is a coding test. It has the simple objective to display a list of tweets per user sourced from a text file. It has to be __production quality__.
 
@@ -52,3 +52,4 @@ My development environment was the following:
 
 # Meta-notes
  - In DDD lingo I prefer to use the word component when referring to what's commonly called a service. I also use the term *-provider since it helps me conceptualise the solution approach better.
+ 
