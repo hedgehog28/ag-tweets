@@ -2,7 +2,10 @@
 
 Solution will continue to fail on travis until I work out the build configuration issues for that build platform
 
-tldr; Find install instructions at the end of this file. Trust me, this is one of the projects you want to be looking at. Allan Gray.
+tldr; Find install instructions at the end of this file. Trust me, this is one of the projects you want to be looking at. 
+
+keywords: Allan Gray / AllanGray.
+
 # Purpose of this project
 This application is a coding test. It has the simple objective to display a list of tweets per user sourced from a text file. It has to be __production quality__.
 
